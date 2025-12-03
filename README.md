@@ -60,7 +60,7 @@
 
 # Resumo Git
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Conceitos básicos</strong></summary>
 
 - Sistema de controle de versão distribuído.  
@@ -69,7 +69,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Configuração inicial</strong></summary>
 
 - `git config --global user.name "Seu Nome"`  
@@ -79,7 +79,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Fluxo básico local</strong></summary>
 
 - `git init` - cria repositório na pasta.  
@@ -91,7 +91,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Estados de arquivo</strong></summary>
 
 - Untracked: arquivo novo, ainda sem `git add`.  
@@ -101,7 +101,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Branches e HEAD</strong></summary>
 
 - Branch é um ponteiro para um commit (`main`, `master`, `feature-x`).  
@@ -110,7 +110,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Comandos de branch</strong></summary>
 
 - `git branch` - lista branches.  
@@ -121,7 +121,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Merge e conflitos</strong></summary>
 
 - `git merge <branch>` - mescla branch passada na atual.  
@@ -131,7 +131,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Stash e correções</strong></summary>
 
 - `git stash` - guarda mudanças locais e limpa Working Tree.  
@@ -141,7 +141,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Remoto / GitHub</strong></summary>
 
 - `git remote add origin <url>` - adiciona remoto.  
@@ -154,7 +154,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Git - Colaboração e Pull Request</strong></summary>
 
 - Fluxo: criar branch → commits → push da branch → abrir Pull Request.  
@@ -167,7 +167,7 @@
 
 # Resumo Redes
 
-<details>
+<details markdown="block">
   <summary><strong>Redes - Conceitos básicos</strong></summary>
 
 - Rede de computadores: dispositivos interligados para compartilhar dados e recursos.  
@@ -175,7 +175,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Tipos de rede (alcance)</strong></summary>
 
 - LAN: pequena área (sala, prédio, campus).  
@@ -184,7 +184,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Topologias de rede</strong></summary>
 
 - Barramento (Bus): todos no mesmo meio compartilhado.  
@@ -193,7 +193,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Meios de transmissão</strong></summary>
 
 - Par trançado (UTP/STP): cobre, muito usado em LAN.  
@@ -202,7 +202,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Equipamentos de rede</strong></summary>
 
 - Repetidor: regenera sinal.  
@@ -215,7 +215,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Modelos de camadas</strong></summary>
 
 - OSI (7 camadas): Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação.  
@@ -224,7 +224,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Protocolos principais</strong></summary>
 
 - Aplicação: HTTP, HTTPS, FTP, SMTP, POP3, IMAP, DNS, SSH, Telnet.  
@@ -234,7 +234,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Endereços e serviços</strong></summary>
 
 - IP: identifica host (ex.: 192.168.0.10).  
@@ -244,7 +244,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Arquiteturas lógicas</strong></summary>
 
 - Cliente-servidor: servidores dedicados, clientes consomem serviços.  
@@ -252,7 +252,7 @@
 
 </details>
 
-<details>
+<details markdown="block">
   <summary><strong>Noções de segurança em redes</strong></summary>
 
 - Segmentação com VLANs para separar tráfego.  
