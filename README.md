@@ -55,3 +55,208 @@
 ![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-%23D24939.svg?style=for-the-badge&logo=jenkins&logoColor=white)
 ![Testes Manuais](https://img.shields.io/badge/Testes%20Manuais-%23E34F26.svg?style=for-the-badge&logo=book&logoColor=white)
+
+---
+
+# Resumo Git
+
+<details>
+  <summary><strong>Git - Conceitos básicos</strong></summary>
+
+- Sistema de controle de versão distribuído.  
+- Guarda histórico de alterações em commits com hash único.  
+- Diferencia Working Tree, Index (Staging Area) e último commit.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Configuração inicial</strong></summary>
+
+- `git config --global user.name "Seu Nome"`  
+- `git config --global user.email "seu@email"`  
+- `git config --global core.editor nano` (ou notepad, etc.)  
+- `git config --list` para ver as configs.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Fluxo básico local</strong></summary>
+
+- `git init` - cria repositório na pasta.  
+- `git status` - mostra estado dos arquivos.  
+- `git add <arquivo>` / `git add .` - manda pro Index.  
+- `git commit -m "mensagem"` - cria commit.  
+- `git log` / `git log --oneline` - lista commits.  
+- `.gitignore` - define o que não será rastreado.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Estados de arquivo</strong></summary>
+
+- Untracked: arquivo novo, ainda sem `git add`.  
+- Staged (Changes to be committed): já foi `git add`.  
+- Modified (Changes not staged): alterado depois do `git add`.  
+- Clean: igual ao último commit.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Branches e HEAD</strong></summary>
+
+- Branch é um ponteiro para um commit (`main`, `master`, `feature-x`).  
+- HEAD aponta para a branch atual.  
+- Commits avançam a branch que HEAD está selecionando.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Comandos de branch</strong></summary>
+
+- `git branch` - lista branches.  
+- `git branch <nome>` - cria branch.  
+- `git checkout <nome>` - troca de branch.  
+- `git checkout -b <nome>` - cria e troca de branch.  
+- `git branch -d <nome>` - apaga branch local.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Merge e conflitos</strong></summary>
+
+- `git merge <branch>` - mescla branch passada na atual.  
+- Fast-forward: só anda o ponteiro.  
+- Three-way: cria commit de merge.  
+- Conflitos: editar regiões `<<<<<<<`, `=======`, `>>>>>>>`, depois `git add` e `git commit`.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Stash e correções</strong></summary>
+
+- `git stash` - guarda mudanças locais e limpa Working Tree.  
+- `git stash apply` / `git stash pop` - reaplica stash (pop apaga).  
+- `git reset --hard <hash>` - volta branch e arquivos para um commit.  
+- `git reset --mixed <hash>` - volta branch, mas mantém mudanças não commitadas.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Remoto / GitHub</strong></summary>
+
+- `git remote add origin <url>` - adiciona remoto.  
+- `git remote -v` - lista remotos.  
+- `git push --set-upstream origin main` - primeiro push da branch.  
+- `git push` - envia commits depois de configurado.  
+- `git clone <url>` - clona repositório remoto.  
+- `git fetch` - baixa novidades do remoto.  
+- `git pull` - `fetch` + `merge` na branch atual.  
+
+</details>
+
+<details>
+  <summary><strong>Git - Colaboração e Pull Request</strong></summary>
+
+- Fluxo: criar branch → commits → push da branch → abrir Pull Request.  
+- PR serve para revisão, comentários e aprovação antes do merge.  
+- Depois do merge: `git checkout main` + `git pull` para atualizar localmente.  
+
+</details>
+
+---
+
+# Resumo Redes
+
+<details>
+  <summary><strong>Redes - Conceitos básicos</strong></summary>
+
+- Rede de computadores: dispositivos interligados para compartilhar dados e recursos.  
+- Vantagens: compartilhamento de recursos, comunicação rápida, centralização de serviços.  
+
+</details>
+
+<details>
+  <summary><strong>Tipos de rede (alcance)</strong></summary>
+
+- LAN: pequena área (sala, prédio, campus).  
+- MAN: área metropolitana (vários prédios / campus grande).  
+- WAN: grandes distâncias, interliga várias LANs.  
+
+</details>
+
+<details>
+  <summary><strong>Topologias de rede</strong></summary>
+
+- Barramento (Bus): todos no mesmo meio compartilhado.  
+- Estrela (Star): hosts ligados a um ponto central (switch/hub).  
+- Anel (Ring): dispositivos em circuito fechado.  
+
+</details>
+
+<details>
+  <summary><strong>Meios de transmissão</strong></summary>
+
+- Par trançado (UTP/STP): cobre, muito usado em LAN.  
+- Fibra óptica: alta capacidade, longa distância, imune a interferência.  
+- Wireless (Wi‑Fi): rádio, usa access point.  
+
+</details>
+
+<details>
+  <summary><strong>Equipamentos de rede</strong></summary>
+
+- Repetidor: regenera sinal.  
+- Hub: concentra e replica tráfico (camada física).  
+- Switch: comuta por MAC (camada 2).  
+- Bridge: separa domínios de colisão, também por MAC.  
+- Roteador: encaminha por IP entre redes (camada 3).  
+- Access Point: fornece Wi‑Fi para rede cabeada.  
+- Modem: adapta sinal do provedor para a rede local.  
+
+</details>
+
+<details>
+  <summary><strong>Modelos de camadas</strong></summary>
+
+- OSI (7 camadas): Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação.  
+- TCP/IP (4 camadas): Acesso à Rede, Internet, Transporte, Aplicação.  
+- Encapsulamento: dados → segmento → pacote → quadro → bits.  
+
+</details>
+
+<details>
+  <summary><strong>Protocolos principais</strong></summary>
+
+- Aplicação: HTTP, HTTPS, FTP, SMTP, POP3, IMAP, DNS, SSH, Telnet.  
+- Transporte: TCP (confiável), UDP (rápido, sem garantia).  
+- Rede: IP, ICMP, ARP.  
+- Enlace: Ethernet, Wi‑Fi, PPP, etc.  
+
+</details>
+
+<details>
+  <summary><strong>Endereços e serviços</strong></summary>
+
+- IP: identifica host (ex.: 192.168.0.10).  
+- Máscara: define parte de rede/host (ex.: 255.255.255.0).  
+- Gateway padrão: roteador para sair da rede local.  
+- DNS: converte nomes em endereços IP.  
+
+</details>
+
+<details>
+  <summary><strong>Arquiteturas lógicas</strong></summary>
+
+- Cliente-servidor: servidores dedicados, clientes consomem serviços.  
+- Ponto‑a‑ponto (P2P): nós se comunicam diretamente, podendo ser cliente e servidor.  
+
+</details>
+
+<details>
+  <summary><strong>Noções de segurança em redes</strong></summary>
+
+- Segmentação com VLANs para separar tráfego.  
+- Firewalls filtrando pacotes entre redes.  
+- Uso de HTTPS, SSH e VPN para criptografar dados em trânsito.  
+
+</details>
